@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<style media="screen" type="text/css">
+
+h1
+{
+	color:black;
+	text-align:center;
+	font-size:60pt;
+	font-family:"arial"
+}
+
+.card
+{
+	width: 350px;
+	height: auto;
+}
+
+.button
+{
+	width:150px;
+	height:auto;
+	font-size:15pt;
+}
+
+</style>
+
+
+<html>
+<body>
+	
+	<center> <h1>LOTERIA</h1>
+    
+    <img class="card" src="{{ STATIC_URL }}img/{{imgfile}}"> 
+    
+    <form name="input" action="" method="get">
+    <input class="button" type="submit" value="Draw card">
+	</form>
+	</center>
+
+</body>
+</html>
